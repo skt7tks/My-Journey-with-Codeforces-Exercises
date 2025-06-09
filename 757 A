@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int i,y,j,a,b,c;
+string str;
+map <char,int> g;
+int main(){
+    cin>>str;
+    y=str.size();
+    for(i=0; i<y; i++)
+        g[str[i]]++;
+    a = min(g['B'],g['b']);
+    b = min(g['u']/2,g['a']/2);
+    c = min(g['l'],min(g['s'],g['r']));
+    cout<<min(a,min(b,c)); 
+    
+}
