@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+    int m;
+    string n;
+    set<char> sa;
+ 
+    cin >> m;
+    cin >> n;
+ 
+    for (int i = 0; i < m; i++){
+        char k = tolower(n[i]);
+        sa.insert(k);
+    }
+ 
+    if(sa.size() == 26){
+        cout << "YES";
+    } else {
+        cout << "NO";
+    }
+ 
+    return 0;
+}
