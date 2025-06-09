@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int n, i, a, b, c, d;
+set <int> s;
+main () {
+    cin>>a>>b>>c>>d;
+    for (i=0; i<=10000; i++)
+    s.insert(a*i+b);
+    n=s.size() ;
+    for (i=0; i<=10000; i++) {
+        n=s.size() ;
+        s.insert(c*i+d);
+        if (n==s.size()) {cout<<c*i+d; return 0;}
+    }
+    cout<< -1;
+}
