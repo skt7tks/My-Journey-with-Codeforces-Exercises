@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int n, m, x, i;
+vector<int> a;
+ 
+int main (){
+cin>>n>>m;
+a.resize(n);
+for (i=0; i<n; i++)
+    cin>>a[i];
+sort(a.begin(), a.end());
+for(i=0; i<m; i++){
+    cin>>x;
+    cout<< upper_bound(a.begin(), a.end(), x)-a.begin()<<" ";
+}
+cout<<endl;
+ 
+ 
+cin.get();
+cin.get();
+return 0;
+ }
