@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+	long long t;
+	cin>>t;
+	while(t--)
+	{
+	    long long n,x,y,a=0,b=0;
+	    cin>>n>>x>>y;
+	    long long h=__gcd(x,y);
+	    long long t=(x*y)/h;
+	    a=n/x-n/t;
+	    b=n/y-n/t;
+	    long long j=n-a;
+	    long long s=0,q=1,w=n;
+	    s=n*(n+1)/2-(j*(j+1)/2)-b*(b+1)/2;
+	  cout<<s<<endl;
+	}
+	return 0;
+}
