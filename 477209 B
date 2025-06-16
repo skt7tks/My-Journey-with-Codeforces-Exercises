@@ -1,0 +1,9 @@
+#include <bits/stdc++.h>
+int main() {
+    int x;
+    std::cin >> x;
+    int steps = (x / 5) + ((x % 5 != 0) ? 1 : 0);
+ 
+    std::cout << steps << std::endl;
+    return 0;
+}
