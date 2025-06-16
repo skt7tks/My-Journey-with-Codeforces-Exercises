@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+long long m;
+ main () {int m;
+ cin>>m;
+ int s,g;
+ int ans=0, k=0;
+ 
+ for(int i=0; i<m; i++)  
+{cin>>s>>g;ans=(s+k)-g;if(ans<0){k=0;} else k=ans;}cout<<ans;
+  return 0;
+ 
+ 
+ }
