@@ -1,0 +1,9 @@
+#include <bits/stdc++.h>
+using namespace std;
+main () {
+int s,f,d;
+int cnt=0;
+cin>>s;
+for(int k=0; k<s; k++) {cin>>f>>d;if(d-f>=2) {cnt++;}} cout<<cnt;
+return 0;
+}
